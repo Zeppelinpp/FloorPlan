@@ -12,7 +12,7 @@ pip install uv # If uv is uninstalled
 ```
 **Sync dependencies**
 ```
-uv sync
+uv syncsfsdf s
 ```
 
 # TODO
