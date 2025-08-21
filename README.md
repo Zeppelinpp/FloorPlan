@@ -10,7 +10,7 @@ cd FloorPlan
 ```
 pip install uv # If uv is uninstalled
 ```
-Sync dependencies
+**Sync dependencies**
 ```
 uv sync
 ```
