@@ -1,0 +1,4 @@
+scale
+toilet
+sink
+shower

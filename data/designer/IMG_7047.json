@@ -3,6 +3,7 @@
   "flags": {},
   "shapes": [
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -28,10 +29,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -57,10 +58,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -86,10 +87,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -115,27 +116,27 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
         [
-          4.343750000000114,
+          2.7812500000001137,
           223.09375000000006
         ],
         [
-          54.343750000000114,
+          52.781250000000114,
           223.09375000000006
         ],
         [
-          54.343750000000114,
+          52.781250000000114,
           490.28125000000006
         ],
         [
-          4.343750000000114,
+          2.7812500000001137,
           490.28125000000006
         ]
       ],
@@ -144,10 +145,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -173,10 +174,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -202,10 +203,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -231,10 +232,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -260,10 +261,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -289,10 +290,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -318,10 +319,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -347,10 +348,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -376,10 +377,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "scale",
       "score": null,
       "points": [
@@ -405,10 +406,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "toilet",
       "score": null,
       "points": [
@@ -434,10 +435,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "toilet",
       "score": null,
       "points": [
@@ -463,10 +464,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "sink",
       "score": null,
       "points": [
@@ -492,10 +493,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "shower",
       "score": null,
       "points": [
@@ -521,10 +522,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "shower",
       "score": null,
       "points": [
@@ -550,10 +551,10 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     },
     {
+      "kie_linking": [],
       "label": "sink",
       "score": null,
       "points": [
@@ -579,12 +580,12 @@
       "difficult": false,
       "shape_type": "rectangle",
       "flags": {},
-      "attributes": {},
-      "kie_linking": []
+      "attributes": {}
     }
   ],
   "imagePath": "IMG_7047.jpg",
   "imageData": null,
   "imageHeight": 1504,
-  "imageWidth": 1179
+  "imageWidth": 1179,
+  "description": ""
 }
