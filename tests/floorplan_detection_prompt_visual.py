@@ -56,10 +56,16 @@ response = client.chat.completions.create(
     model="qvq-max",
     messages=[
         {"role": "system", "content": prompt},
-        {"role": "user", "content": [
-            {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{encoded_string}"}},
-            {"type": "text", "text": interactive_prompt}
-        ]},
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/png;base64,{encoded_string}"},
+                },
+                {"type": "text", "text": interactive_prompt},
+            ],
+        },
     ],
     extra_body={"enable_thinking": True},
 )

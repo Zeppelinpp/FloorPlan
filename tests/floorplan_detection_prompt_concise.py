@@ -58,16 +58,20 @@ response = client.chat.completions.create(
     model="qvq-max",
     messages=[
         {"role": "system", "content": prompt},
-        {"role": "user", "content": [
-            {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{encoded_string}"}},
-            {"type": "text", "text": cot_prompt}
-        ]},
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/png;base64,{encoded_string}"},
+                },
+                {"type": "text", "text": cot_prompt},
+            ],
+        },
     ],
     extra_body={"enable_thinking": True},
     stream=True,
-    stream_options={
-        "include_usage": True
-    },
+    stream_options={"include_usage": True},
 )
 
 reasoning_content = ""  # 完整思考过程
@@ -77,7 +81,7 @@ print("\n" + "=" * 20 + "思考过程" + "=" * 20 + "\n")
 
 for chunk in response:
     if not chunk.choices:
-        print("\n" + "="*20+"Usage"+"="*20)
+        print("\n" + "=" * 20 + "Usage" + "=" * 20)
         print(chunk.usage)
         continue
     delta = chunk.choices[0].delta

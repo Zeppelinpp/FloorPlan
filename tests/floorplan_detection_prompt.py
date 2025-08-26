@@ -13,7 +13,9 @@ client = OpenAI(
 )
 
 
-with open("D:\\projects\\FloorPlan\\data\\floorplan\\IMG_5454.JPG", "rb") as example_image_file:
+with open(
+    "D:\\projects\\FloorPlan\\data\\floorplan\\IMG_5454.JPG", "rb"
+) as example_image_file:
     example_encoded_string = base64.b64encode(example_image_file.read()).decode("utf-8")
 
 with open("D:\\projects\\FloorPlan\\data\\floorplan\\IMG_5455.JPG", "rb") as image_file:
@@ -34,7 +36,7 @@ prompt = """
 辅助线与标尺的交点之间可能包含多段双向箭头之间的线段，这种情况边长度为多段数值之和
 如果没有可以确定的边，可以通过别紧挨着的房间近似估计边长
 """
-user_prompt="""
+user_prompt = """
 <例子>
 比如这个图的卫生间01的面积是4.1平方米，横向可以看到左侧的标尺的两个箭头能对齐卫生间01的其中一条边，长度是2075mm，即2.075m，所以另一条边是4.1/2.075=1.976m
 其中2.075m是长，1.976m是宽
@@ -49,20 +51,35 @@ response = client.chat.completions.create(
     model="qvq-max",
     messages=[
         {"role": "system", "content": prompt},
-        {"role": "user", "content": [
-            {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{example_encoded_string}"}},
-            {"type": "text", "text": user_prompt}
-        ]},
-        {"role": "user", "content": [
-            {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{encoded_string}"}},
-            {"type": "text", "text": "按照先前的例子，分析提取这张图片中卫生间相对应的信息"}
-        ]},
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/png;base64,{example_encoded_string}"
+                    },
+                },
+                {"type": "text", "text": user_prompt},
+            ],
+        },
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:image/png;base64,{encoded_string}"},
+                },
+                {
+                    "type": "text",
+                    "text": "按照先前的例子，分析提取这张图片中卫生间相对应的信息",
+                },
+            ],
+        },
     ],
     extra_body={"enable_thinking": True},
     stream=True,
-    stream_options={
-        "include_usage": True
-    },
+    stream_options={"include_usage": True},
 )
 
 reasoning_content = ""  # 完整思考过程
@@ -72,7 +89,7 @@ print("\n" + "=" * 20 + "思考过程" + "=" * 20 + "\n")
 
 for chunk in response:
     if not chunk.choices:
-        print("\n" + "="*20+"Usage"+"="*20)
+        print("\n" + "=" * 20 + "Usage" + "=" * 20)
         print(chunk.usage)
         continue
     delta = chunk.choices[0].delta
